@@ -11,7 +11,6 @@ main() {
     git clone -b "feaure/min-logs" "https://gitlab.com/a_gonda/nowarddos.git" || exit 1
     echo "OK"
 
-
     python -m venv "nowarddos"
     cd "nowarddos"
 
